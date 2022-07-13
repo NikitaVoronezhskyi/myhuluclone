@@ -2,6 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  images: {
+    domains: ['i.pinimg.com','press.hulu.com']
+ }
 }
 
 module.exports = nextConfig
