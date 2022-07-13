@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Header from '../components/Header/Header'
+import Main from '../components/Main/Main'
+import Navbar from '../components/Navbar/Navbar'
 
 export default function Home() {
   return (
@@ -10,6 +12,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>
+      <Navbar/>
+      <Main/>
     </>
   )
+}
+
+
+export async function getServerSideProps(context) {
+  const genre = context.query.genre;
+  
 }
