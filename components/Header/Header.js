@@ -21,6 +21,7 @@ const Header = () => {
             <HeaderItem title="Account" Icon={UserIcon} />
         </ul>
       <Image
+        alt="Hulu"
         src={"/../public/hulu-white.webp"}
         className="object-contain"
         width={200}
